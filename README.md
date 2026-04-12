@@ -3,9 +3,9 @@
 A plymouth theme with Mac OS like slider and glowing logo at end of animation.
 Licensed under [MIT License](LICENSE)
 
-Based on: [](https://www.opendesktop.org/p/2106821/)
+Based on: [www.opendesktop.org/p/2106821/](https://www.opendesktop.org/p/2106821/)
 
-Insipired from: [](https://www.opendesktop.org/p/1000032/)
+Insipired from: [www.opendesktop.org/p/1000032/](https://www.opendesktop.org/p/1000032/)
 
 Background from: [Grub2 Cachy OS Theme](https://github.com/diegons490/cachyos-grub-theme)
 
