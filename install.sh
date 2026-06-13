@@ -1,6 +1,6 @@
 #!/bin/bash
 
-THEME_DIR="/usr/share/plymouth/themes/arch-slider-and-glow"
+THEME_DIR="/usr/share/plymouth/themes/everforest-arch"
 
 if [[ $1 == "install" ]]; then
         if [[ -e $THEME_DIR ]];then
@@ -8,7 +8,7 @@ if [[ $1 == "install" ]]; then
                 exit 0
         fi
 
-        if [[ ! -e "./arch-slider-and-glow.plymouth" ]]; then
+        if [[ ! -e "./everforest-arch.plymouth" ]]; then
                 echo "Please run inside repo directory"
                 exit 1
         fi
@@ -30,7 +30,7 @@ if [[ $1 == "install" ]]; then
         chown -R root:root $THEME_DIR
  
         echo -e "$ARROW Applying theme ..."
-        plymouth-set-default-theme -R arch-slider-and-glow
+        plymouth-set-default-theme -R everforest-arch
 
         echo -e "$ARROW \033[32mFinished Install\033[0m"
 
@@ -48,7 +48,7 @@ elif [[ $1 == "remove" ]]; then
 
 
         # Pick a fallback theme for removing
-        FALLBACK_THEME=$(plymouth-set-default-theme --list | grep -v "arch-slider-and-glow" | head -n 1)
+        FALLBACK_THEME=$(plymouth-set-default-theme --list | grep -v "everforest-arch" | head -n 1)
  
         ARROW="\033[32m==>\033[0m"
 
