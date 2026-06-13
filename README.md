@@ -28,9 +28,15 @@ Install with these commands:
 ```bash
 git clone https://github.com/NopeVfx/Everforest-Plymouth.git
 cd Everforest-Plymouth
+chmod +x install.sh          # in case the executable bit was lost (e.g. ZIP download)
 sudo ./install.sh install
 # then rebuild your initramfs (e.g. `sudo mkinitcpio -P` on Arch)
 ```
+
+> [!TIP]
+> Works the same from bash, zsh, or fish — the script runs under its own `#!/bin/bash`
+> shebang. If `./install.sh` ever gives "permission denied", just run it explicitly:
+> `sudo bash install.sh install`.
 
 `install.sh install` copies the theme to `/usr/share/plymouth/themes/everforest-arch`
 and sets it as the default. The theme name is **`everforest-arch`**, so you can also
