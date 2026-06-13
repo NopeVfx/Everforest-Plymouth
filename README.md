@@ -1,5 +1,15 @@
 # Arch Slider And Glow — Everforest Dark
 
+> [!WARNING]
+> **Display manager:** This theme was set up and tested with **LightDM**. A Plymouth theme
+> runs *before* the display manager, so it works with any DM in principle — but the smoothness
+> of the boot → login handoff depends on your DM, and some (notably `ly`) can show a rougher
+> transition. Enable your display manager the normal way, e.g. `sudo systemctl enable lightdm.service`.
+> On Arch the old `lightdm-plymouth.service`, `sddm-plymouth.service` and `lxdm-plymouth.service`
+> units **no longer exist** — enable the plain `lightdm.service` / `sddm.service` instead. Make
+> sure only one DM is enabled: `systemctl status display-manager.service` should point to your
+> chosen one.
+
 A plymouth theme with a Mac OS like slider and a glowing logo at the end of the animation, recolored for [Everforest Dark](https://github.com/sainnhe/everforest).
 Licensed under [MIT License](LICENSE)
 
