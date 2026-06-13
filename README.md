@@ -16,8 +16,8 @@ Insipired from: [www.opendesktop.org/p/1000032/](https://www.opendesktop.org/p/1
 
 Install with these commands:
 ```bash
-git clone https://github.com/HasanAgitUnal/ArchSliderGlowPlymouth.git
-cd ArchSliderGlowPlymouth
+git clone https://github.com/NopeVfx/arch-slider-glow-everforest.git
+cd arch-slider-glow-everforest
 sudo ./install.sh install
 # then rebuild your initramfs (e.g. `sudo mkinitcpio -P` on Arch)
 ```
