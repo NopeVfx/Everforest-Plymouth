@@ -35,6 +35,29 @@ Go to the repo directory and run:
 sudo ./install remove
 ```
 
+# Boot too fast to see the animation?
+
+On fast machines (NVMe + quick userspace) the system can finish booting before
+the splash gets to play, so Plymouth is torn down almost immediately. The
+included `plymouth-hold.service` fixes this by keeping the splash on screen for a
+fixed number of seconds before the display manager takes over.
+
+Install and enable it:
+```bash
+sudo cp plymouth-hold.service /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable plymouth-hold.service
+```
+
+Adjust the delay by editing the `ExecStart=/usr/bin/sleep 5` line (seconds). The
+animation itself is roughly 2s (slider) + 1s (end glow); `5` adds a little
+headroom. Higher = splash lingers longer, lower = faster boot.
+
+Disable it again with:
+```bash
+sudo systemctl disable plymouth-hold.service
+```
+
 # Screenshots
 
 ![](./screenshots/image1.png)
