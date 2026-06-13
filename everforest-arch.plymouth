@@ -1,5 +1,5 @@
 [Plymouth Theme]
-Name=arch-slider-and-glow
+Name=everforest-arch
 Description=Arch Linux Everforest-Dark boot animation with slider and small glow animation
 ModuleName=two-step
 
@@ -7,7 +7,7 @@ ModuleName=two-step
 BackgroundName=background
 Font=Cantarell 12
 TitleFont=Cantarell Light 30
-ImageDir=/usr/share/plymouth/themes/arch-slider-and-glow/resources
+ImageDir=/usr/share/plymouth/themes/everforest-arch/resources
 DialogHorizontalAlignment=.5
 DialogVerticalAlignment=.5
 TitleHorizontalAlignment=.5
