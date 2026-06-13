@@ -1,13 +1,16 @@
-# Arch Slider And Glow
+# Arch Slider And Glow — Everforest Dark
 
-A plymouth theme with Mac OS like slider and glowing logo at end of animation.
+A plymouth theme with a Mac OS like slider and a glowing logo at the end of the animation, recolored for [Everforest Dark](https://github.com/sainnhe/everforest).
 Licensed under [MIT License](LICENSE)
+
+This is an Everforest-Dark variant of [ArchSliderGlowPlymouth](https://github.com/HasanAgitUnal/ArchSliderGlowPlymouth):
+- Arch logo recolored to Everforest green `#a7c080`
+- Slider / progress bar highlight recolored from blue to Everforest green `#a7c080`
+- Background set to Everforest-Dark gray `#1e2326`
 
 Based on: [www.opendesktop.org/p/2106821/](https://www.opendesktop.org/p/2106821/)
 
 Insipired from: [www.opendesktop.org/p/1000032/](https://www.opendesktop.org/p/1000032/)
-
-Background from: [Grub2 Cachy OS Theme](https://github.com/diegons490/cachyos-grub-theme)
 
 # Installation
 
@@ -16,6 +19,7 @@ Install with these commands:
 git clone https://github.com/HasanAgitUnal/ArchSliderGlowPlymouth.git
 cd ArchSliderGlowPlymouth
 sudo ./install.sh install
+# then rebuild your initramfs (e.g. `sudo mkinitcpio -P` on Arch)
 ```
 
 You can remove theme if you didnt deleted cloned repo folder.

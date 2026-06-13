@@ -1,6 +1,6 @@
 [Plymouth Theme]
 Name=arch-slider-and-glow
-Description=Arch Linux boot animation with slider and small glow animation
+Description=Arch Linux Everforest-Dark boot animation with slider and small glow animation
 ModuleName=two-step
 
 [two-step]
@@ -18,14 +18,14 @@ WatermarkHorizontalAlignment=.5
 WatermarkVerticalAlignment=.98
 Transition=none
 TransitionDuration=0.0
-BackgroundStartColor=0x000000
-BackgroundEndColor=0x000000
+BackgroundStartColor=0x1e2326
+BackgroundEndColor=0x1e2326
 ProgressBarHorizontalAlignment=.5
 ProgressBarVerticalAlignment=.6
 ProgressBarWidth=250
 ProgressBarHeight=228
 ProgressBarBackgroundColor=0x333333
-ProgressBarForegroundColor=0x1793d1
+ProgressBarForegroundColor=0xa7c080
 DialogClearsFirmwareBackground=true
 MessageBelowAnimation=true
 
