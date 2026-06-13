@@ -22,6 +22,13 @@ sudo ./install.sh install
 # then rebuild your initramfs (e.g. `sudo mkinitcpio -P` on Arch)
 ```
 
+`install.sh install` copies the theme to `/usr/share/plymouth/themes/arch-slider-and-glow`
+and sets it as the default. The theme name is **`arch-slider-and-glow`**, so you can also
+enable it manually at any time with:
+```bash
+sudo plymouth-set-default-theme -R arch-slider-and-glow
+```
+
 You can remove theme if you didnt deleted cloned repo folder.
 Go to the repo directory and run:
 ```bash
