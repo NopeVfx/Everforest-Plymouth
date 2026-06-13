@@ -30,13 +30,13 @@ git clone https://github.com/NopeVfx/Everforest-Plymouth.git
 cd Everforest-Plymouth
 chmod +x install.sh          # in case the executable bit was lost (e.g. ZIP download)
 sudo ./install.sh install
-# then rebuild your initramfs (e.g. `sudo mkinitcpio -P` on Arch)
+sudo mkinitcpio -P           # rebuild the initramfs so the splash is embedded (Arch)
 ```
 
 > [!TIP]
 > Works the same from bash, zsh, or fish — the script runs under its own `#!/bin/bash`
-> shebang. If `./install.sh` ever gives "permission denied", just run it explicitly:
-> `sudo bash install.sh install`.
+> shebang. If `./install.sh` ever gives "permission denied", run it explicitly with
+> bash or zsh: `sudo bash install.sh install` (or `sudo zsh install.sh install`).
 
 `install.sh install` copies the theme to `/usr/share/plymouth/themes/everforest-arch`
 and sets it as the default. The theme name is **`everforest-arch`**, so you can also
@@ -48,7 +48,7 @@ sudo plymouth-set-default-theme -R everforest-arch
 You can remove theme if you didnt deleted cloned repo folder.
 Go to the repo directory and run:
 ```bash
-sudo ./install remove
+sudo ./install.sh remove
 ```
 
 # Boot too fast to see the animation?

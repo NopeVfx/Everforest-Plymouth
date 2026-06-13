@@ -35,7 +35,8 @@ if [[ $1 == "install" ]]; then
         echo -e "$ARROW \033[32mFinished Install\033[0m"
 
 elif [[ $1 == "remove" ]]; then
-        read -p "Are you sure to remove theme? [Y/n]: " confirm
+        printf "Are you sure to remove theme? [Y/n]: "
+        read confirm
         if [[ $confirm != [yY] ]];then
                 echo "Canceled"
                 exit
