@@ -1,0 +1,16 @@
+[Unit]
+Description=Hold Plymouth splash so the full boot animation can play
+# Start only after Plymouth is up, and block the quit / display-manager until
+# our sleep finishes so a fast boot does not cut the animation short.
+After=plymouth-start.service
+Before=plymouth-quit.service plymouth-quit-wait.service display-manager.service
+
+[Service]
+Type=oneshot
+# Number of seconds to keep the splash on screen. This is added to your boot
+# time. The animation is ~2s (slider/throbber) + ~1s (end glow); 5s gives a
+# little headroom. Lower it if boot feels too slow, raise it to linger longer.
+ExecStart=/usr/bin/sleep 5
+
+[Install]
+WantedBy=plymouth-start.service
